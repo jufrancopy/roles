@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Permissions extends Seeder
+class ProductsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class Permissions extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Product::class, 80)->create();
     }
 }
