@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "304bb93e9b179deb41abf00cc8c1c951",
+    "content-hash": "751e08ca23a8e4e7827132b0dc5b6a15",
     "packages": [
         {
             "name": "caffeinated/shinobi",
-            "version": "dev-master",
+            "version": "v4.0.0-beta.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caffeinated/shinobi.git",
@@ -4521,9 +4521,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "caffeinated/shinobi": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
