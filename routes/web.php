@@ -67,20 +67,20 @@ Route::middleware(['auth'])->group(function(){
 
 
 	//Users
-	Route::post('users/store', 'UserController@store')->name('users.store')
-		->middleware('permission:users.create');
+	Route::get('users', 'UserController@store')->name('users.store')
+		->middleware('permission:users.create');	
 
 	Route::get('users', 'UserController@index')->name('users.index')
 		->middleware('permission:users.index');
-
-	Route::get('users/create', 'UserController@create')->name('users.create')
-		->middleware('permission:users.create');
 
 	Route::put('users/{role}', 'UserController@update')->name('users.update')
 		->middleware('permission:users.edit');
 
 	Route::get('users/{role}', 'UserController@show')->name('users.show')
 		->middleware('permission:users.show');
+
+	Route::get('users/create', 'UserController@create')->name('users.create')
+		->middleware('permission:users.create');
 
 	Route::delete('users/{role}', 'UserController@destroy')->name('users.destroy')
 		->middleware('permission:users.destroy');

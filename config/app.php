@@ -177,6 +177,7 @@ return [
 
         //Paquetes adheridos por Julio Franco
         Collective\Html\HtmlServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
 
 
     ],
